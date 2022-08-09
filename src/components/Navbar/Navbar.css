@@ -1,0 +1,18 @@
+.nav-container {
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    min-width: var(--navbar-width);
+    background-color: var(--bg-primary);
+}
+
+.logo-container {
+    margin: 30px 0;
+}
+
+.logo-container > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+}

@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --bg-primary: white;
+  --text-primary: black;
+  --navbar-width: 230px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[theme="light"] {
+  --bg-primary: black;
+  --text-primary: white;
+}
+
+* {
+  font-family: "Quicksand" !important;
+}
+
+html {
+  padding: 0;
+  background: var(--bg-primary);
+}
+
+body {
+  margin: 0px;
+}
+
+.App {
+  display: flex;
+}
+
+.main {
+  margin: 0 20px 0 calc(var(--navbar-width) + 20px);
+  width: 100%;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+li > div {
+  color: var(--text-primary) !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(0, 0, 0, 0.151);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: black;
+}
+
+.MuiFormLabel-root {
+  color: var(--text-primary) !important;
+}
+
+.MuiInputBase-root::after {
+  border-bottom: 2px solid #000000 !important;
+}
+
+.footer {
+  height: 120px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-container {
+    display: none;
+  }
+  .main {
+    margin: 0 10px 0 10px;
+  }
 }

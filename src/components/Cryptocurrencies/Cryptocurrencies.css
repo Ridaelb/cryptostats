@@ -1,0 +1,29 @@
+.currency-rank {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: -40px;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.currency-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+.currency-card-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency-card-stats > div {
+    margin-top: 10px;
+}
+
+.currency-card-icon {
+    width: 30px;
+    height: 30px;
+}
